@@ -13,11 +13,20 @@ bool isDivisible(superlong numberInQuestion, superlong mainNumber)
 
 bool isPrimeNum(superlong number)
 {
-    for(superlong i = 2; i <= number/2; i+=1)
+    if(number == 2) // technically this isn't necessary
+        return true;
+    
+    if(number & 0x1) // if odd
     {
-        if(isDivisible(i, number))
-            return false;
-    }
+        // will only be divisible by odd numbers
+        for(superlong i = 3; i <= number/2; i+=2)
+        {
+            if(isDivisible(i, number))
+                return false;
+        }
+    }     
+    else // if even
+        return false;
 
     return true;
 }
