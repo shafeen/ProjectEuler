@@ -8,7 +8,10 @@ typedef unsigned long long superlong;
 
 bool isDivisibleByAll(superlong number)
 {
-	for(uint i = 1; i <= 20; i++)
+	uint start = 1;
+	uint end = 20;
+	
+	for(uint i = start; i <= end; i++)
 		if(number % i != 0)
 			return false;
 
@@ -27,11 +30,24 @@ void problem5() // brute force
 	cout << number-1 << " is divisible by each of 1 thru 20!\n";
 }
 
+void problem5_better() // brute force optimized
+{
+	superlong number = 19; // largest prime amongst divisors
+	
+	while(true)
+	{
+		if(isDivisibleByAll(number))
+			break;
+		number+=19;
+	}
+	cout << number << " is divisible by each of 1 thru 20!\n";
+}
+
 
 int main()
 {	
 
-	problem5();
+	problem5_better();
 
 	return 0;
 }
