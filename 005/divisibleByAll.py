@@ -7,12 +7,14 @@ def isDivisibleByAll(number):
 	return True
 
 def problem5():
-	number = 19 # largest prime amongst divisors
+	# note you can also set this number below to the lcm of 
+	# any of the prior in sequence, for example 1..10 = 2520
+	number = 20 # largest number amongst divisors
 
 	while True:
 		if isDivisibleByAll(number):
 			break
-		number += 19
+		number += 20
 	print "%d is divisible by each of 1 thru 20" % (number)
 
 

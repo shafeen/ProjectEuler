@@ -32,13 +32,13 @@ void problem5() // brute force
 
 void problem5_better() // brute force optimized
 {
-	superlong number = 19; // largest prime amongst divisors
+	superlong number = 20; // largest amongst divisors
 	
 	while(true)
 	{
 		if(isDivisibleByAll(number))
 			break;
-		number+=19;
+		number+=20;
 	}
 	cout << number << " is divisible by each of 1 thru 20!\n";
 }
