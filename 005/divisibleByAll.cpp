@@ -6,15 +6,13 @@ using namespace std;
 
 typedef unsigned long long superlong;
 
-bool isDivisibleByAll(superlong number)
+bool isDivisibleByAll(superlong number, uint start=1, uint end=20)
 {
-	uint start = 1;
-	uint end = 20;
-	
 	for(uint i = start; i <= end; i++)
+	{
 		if(number % i != 0)
 			return false;
-
+	}
 	return true;
 }
 
