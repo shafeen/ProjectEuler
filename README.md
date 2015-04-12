@@ -9,7 +9,9 @@ My solutions to Project Euler Problems
 - [x] Problem 4
 - [x] Problem 5
 - [x] Problem 6
-- [ ] Problem 7
+- [x] Problem 7
 - [ ] Problem 8
 - [ ] Problem 9
-- [ ] Problem 10
+- [x] Problem 10
+- [ ] Problem 11
+- [ ] Problem 12
