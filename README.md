@@ -13,5 +13,5 @@ My solutions to Project Euler Problems
 - [ ] Problem 8
 - [ ] Problem 9
 - [x] Problem 10
-- [ ] Problem 11
+- [x] Problem 11
 - [ ] Problem 12
